@@ -80,7 +80,6 @@ return require'packer'.startup(function(use)
     config = function() require'plugins.coq' end
   }
 
-
   use {
     'ggandor/lightspeed.nvim'
   }
@@ -89,5 +88,15 @@ return require'packer'.startup(function(use)
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'},
     config = function() require'plugins.barbar' end
+  }
+
+  use {
+    'folke/persistence.nvim',
+    config = function() require'plugins.persistence' end,
+  }
+
+  use {
+    'goolord/alpha-nvim',
+    config = function() require'plugins.alpha' end
   }
 end)
