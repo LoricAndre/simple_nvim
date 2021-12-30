@@ -99,4 +99,8 @@ return require'packer'.startup(function(use)
     'goolord/alpha-nvim',
     config = function() require'plugins.alpha' end
   }
+
+  use {
+    'neomake/neomake'
+  }
 end)
